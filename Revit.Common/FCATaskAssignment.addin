@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+ <AddIn Type="Application">
+       <Name>Task assignment Fernando Arantes</Name>
+       <FullClassName>Revit.Common.ExternalApplication</FullClassName>
+       <Text>FCATaskAssignment Addin</Text>
+       <Description>Task assignment Fernando Arantes</Description>
+       <VisibilityMode>AlwaysVisible</VisibilityMode>
+       <Assembly>FCATaskAssignment/FCATaskAssignment.dll</Assembly>
+       <AddInId>456FFC79-C4C3-4A5B-A0FE-CE89CEC7EE04</AddInId>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Fernando Arantes</VendorDescription>
+ </AddIn>
+</RevitAddIns>
+            
+    
+

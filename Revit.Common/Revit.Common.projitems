@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c5d23e10-c3af-4ac2-8f80-9d4482d274b0</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Revit.Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Apps\ImportOBJ\ImportOBJEC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apps\ImportOBJ\OBJParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apps\ImportOBJ\RevitGeometryObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apps\RoomDataExtractor\RoomData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apps\RoomDataExtractor\RoomDataExtractionEC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apps\RoomDataExtractor\UtilizationCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExternalApplication\ExternalApplication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\GeometryHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)FCATaskAssignment.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)PackageContents.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)ExternalApplication\" />
+  </ItemGroup>
+</Project>
