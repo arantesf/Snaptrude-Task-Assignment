@@ -1,7 +1,7 @@
 ## Description
 
 This is the Fernando Arantes source code of the task assignment to Snaptrude's Revit Developer position.
-You can check the Revit add-in installing the "Revit.Installer/Output/FCATaskAssignment 1.0.0.exe" file.
+You can check the Revit add-in installing the "FCATaskAssignment 1.0.0.exe" in this repository release attachments.
 The external commands will be placed in a new tab in Revit, named "FCA Task Assignment".
 Note that this solution was made to work with the versions of Revit that you can download from the Autodesk Website: 2021, 2022, 2023 and 2024. 
 
